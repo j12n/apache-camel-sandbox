@@ -1,0 +1,56 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.elasticpath.camel-tests</groupId>
+	<artifactId>simple-rest</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<name>simple-rest</name>
+
+	<properties>
+		<camel.version>2.8.3</camel.version>
+		<slf4j.version>1.6.1</slf4j.version>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<artifactId>camel-core</artifactId>
+			<groupId>org.apache.camel</groupId>
+			<version>${camel.version}</version>
+		</dependency>
+		<dependency>
+			<artifactId>camel-spring</artifactId>
+			<groupId>org.apache.camel</groupId>
+			<version>${camel.version}</version>
+		</dependency>
+		<dependency>
+			<artifactId>camel-http</artifactId>
+			<groupId>org.apache.camel</groupId>
+			<version>${camel.version}</version>
+		</dependency>
+		<dependency>
+			<artifactId>camel-test</artifactId>
+			<groupId>org.apache.camel</groupId>
+			<version>${camel.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<artifactId>slf4j-api</artifactId>
+			<groupId>org.slf4j</groupId>
+			<version>${slf4j.version}</version>
+		</dependency>
+		<dependency>
+			<artifactId>slf4j-log4j12</artifactId>
+			<groupId>org.slf4j</groupId>
+			<version>${slf4j.version}</version>
+			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<artifactId>log4j</artifactId>
+			<groupId>log4j</groupId>
+			<version>1.2.16</version>
+			<scope>runtime</scope>
+		</dependency>
+	</dependencies>
+
+</project>
